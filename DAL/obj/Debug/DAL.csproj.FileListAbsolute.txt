@@ -1,0 +1,7 @@
+C:\Users\JBhalsing\source\repos\PersonTracking\DAL\bin\Debug\DAL.dll
+C:\Users\JBhalsing\source\repos\PersonTracking\DAL\bin\Debug\DAL.pdb
+C:\Users\JBhalsing\source\repos\PersonTracking\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\JBhalsing\source\repos\PersonTracking\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\JBhalsing\source\repos\PersonTracking\DAL\obj\Debug\DAL.dll
+C:\Users\JBhalsing\source\repos\PersonTracking\DAL\obj\Debug\DAL.pdb
+C:\Users\JBhalsing\source\repos\PersonTracking\DAL\bin\Debug\DAL.dll.config

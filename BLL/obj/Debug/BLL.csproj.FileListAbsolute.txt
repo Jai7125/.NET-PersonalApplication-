@@ -1,0 +1,10 @@
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\bin\Debug\BLL.dll
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\bin\Debug\BLL.pdb
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\bin\Debug\DAL.dll
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\bin\Debug\DAL.pdb
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\obj\Debug\BLL.dll
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\obj\Debug\BLL.pdb
+C:\Users\JBhalsing\source\repos\PersonTracking\BLL\bin\Debug\DAL.dll.config

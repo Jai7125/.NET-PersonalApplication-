@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="JAYDIPBHALSING\SQLEXPRESS" Class="EmployeeDataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JAYDIPBHALSING\SQLEXPRESS;Initial Catalog=JAYDIPBHALSING\SQLEXPRESS;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="JAYDIPBHALSING_SQLEXPRESSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Department" Member="Departments">
+    <Type Name="Department">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DepartmentName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ImagePath" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DepartmentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PositionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Salary" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Password" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsAdmin" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Month" Member="Months">
+    <Type Name="Month">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StateName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Permission" Member="Permissions">
+    <Type Name="Permission">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PermissionStartDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PermissionEndDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="permissionstate" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="permissionExplanation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="permissionDay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Permissionstate" Member="Permissionstates">
+    <Type Name="Permissionstate">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StateName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Position" Member="Positions">
+    <Type Name="Position">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PositionName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Salary" Member="Salaries">
+    <Type Name="Salary">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Year" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MonthID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Task" Member="Tasks">
+    <Type Name="Task">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmployeeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TaskTitle" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="TaskContent" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaskStartDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TaskDeliveryDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TaskState" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaskState" Member="TaskStates">
+    <Type Name="TaskState">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StateName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
